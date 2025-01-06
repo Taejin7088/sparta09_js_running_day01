@@ -16,21 +16,21 @@ Repository를 fork 하여 본인의 repository로 옮긴 후,
 
 ```javascript
 1. let uninitialized;
-console.log(uninitialized); // 결과값 < 빈칸 >
+console.log(uninitialized); // 결과값 < 참조오류 : let은 var와 다르게 값이 안정해져있으면 오류나옴 >
 
 
-2. < 빈칸 > apple = "사과";
+2. < const > apple = "사과";
 apple = "바나나"; // TypeError: Assignment to constant variable
 
 
 3. let lotto = [3, 8, 13, 19, 21, 32];
-console.log(lotto[3]); // 결과값 < 빈칸 >
+console.log(lotto[3]); // 결과값 < 19 >
 
 
 4.
 let mySchedule = "";
-console.log(mySchedule || false); // < 빈칸 >
-console.log(!!mySchedule); // < 빈칸 >
+console.log(mySchedule || false); // < false >
+console.log(!!mySchedule); // < false >
 
 ```
 
