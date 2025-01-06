@@ -49,6 +49,9 @@ console.log(!!mySchedule); // < false >
 ```javascript
 const junhyun = {
     // 조건을 충족하는 코드 작성
+    name : "태진",
+    age : 25,
+    mbti : "INFP",
 };
 
 console.log(이름이 나오게 콘솔을 실행시켜 주세요.);
@@ -147,7 +150,9 @@ applyCoupon(userBCart, coupon);
 ```
 
 1.	실행 결과로 userACart.items와 userBCart.items는 각각 어떻게 달라져 있을까요?
-
+두명다 물건값 전부가 5000원씩 깍임
 2.	1번의 결과에 대한 이유를 설명해보세요.
-
-3.	원래 의도대로라면 유저 A와 유저 B 장바구니가 독립적으로 동작해야 하는데, 그렇게 하려면 코드를 어떻게 수정해야 할까요?
+applyCoupon 함수는 coupon의 discount 객체만큼 userACart.items.price를 5000원씩 깍는 함수임
+const userBCart = userACart; 는 두개의 주소값을 같다하는 선언문임으로 두개는 같음
+둘다깍임
+3.	원래 의도대로라면 유저 A와 유저 B 장바구니가 독립적으로 동작해야 하는데, 그렇게 하려면 코드를 어떻게 수정해야 할까요? 하드코딩하는방법밖에 모르겠음
